@@ -3,124 +3,289 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio de Álvaro Chillarón</title>
+    <meta
+      name="description"
+      content="Portfolio de Álvaro Chillarón Prats, estudiante de Desarrollo de Aplicaciones Web. Descubre sus proyectos, competencias y evolución como desarrollador."
+    />
+    <meta name="theme-color" content="#111c30" />
+    <title>Álvaro Chillarón Prats | Portfolio de desarrollo web</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Álvaro Chillarón</h1>
-      <p>Estudiante de Desarrollo de Aplicaciones Web</p>
-      <p>
-        <a href="https://github.com/AlvaroChp/portfolio">
-          Repositorio del portfolio
+    <header class="hero" id="inicio">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a
+          class="brand"
+          href="#inicio"
+          aria-label="Álvaro Chillarón Prats, inicio"
+        >
+          <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+          <span>Álvaro Chillarón Prats</span>
         </a>
-      </p>
+
+        <ul class="nav-links">
+          <li><a href="#inicio" aria-current="page">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Álvaro Chillarón Prats</h1>
+          <p class="hero-subtitle">
+            Estudiante de Desarrollo de Aplicaciones Web
+          </p>
+
+          <a
+            class="button button-outline"
+            href="https://github.com/AlvaroChp/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span aria-hidden="true">⌘</span>
+            Repositorio del portfolio
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <p class="hero-description">
+            Bienvenido a mi portfolio. Aquí encontrarás mi formación, mis
+            proyectos y mi evolución como desarrollador.
+          </p>
+        </div>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="code-window">
+            <div class="window-controls">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="code-content">
+              <span class="code-line purple"></span>
+              <span class="code-line blue"></span>
+              <span class="code-line yellow short"></span>
+              <span class="code-line green"></span>
+              <span class="code-line purple short"></span>
+              <span class="code-line blue long"></span>
+              <span class="code-line yellow"></span>
+            </div>
+            <span class="code-symbol">&lt;/&gt;</span>
+          </div>
+          <div class="hero-base"></div>
+          <div class="hero-plant">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <p>
-      Documento inicial para verificar la automatización del despliegue
-      continuo.
-    </p>
+    <main class="container main-content">
+      <section class="content-section about-section" id="sobre-mi">
+        <div class="section-icon" aria-hidden="true">♙</div>
+        <div class="section-body">
+          <h2>Presentación personal</h2>
+          <p>
+            Soy estudiante de Desarrollo de Aplicaciones Web y estoy
+            construyendo este portfolio para mostrar mi formación, mis proyectos
+            y mi evolución como desarrollador.
+          </p>
+        </div>
+      </section>
 
-    <h2>Presentación personal</h2>
-    <p>
-      Soy estudiante de Desarrollo de Aplicaciones Web y estoy construyendo este
-      portfolio para mostrar mi formación, mis proyectos y mi evolución como
-      desarrollador.
-    </p>
+      <section class="content-section">
+        <div class="section-icon" aria-hidden="true">⚙</div>
+        <div class="section-body">
+          <h2>Competencias</h2>
+          <ul class="skills-list">
+            <li class="skill skill-blue">
+              <span aria-hidden="true">5</span> Desarrollo web
+            </li>
+            <li class="skill skill-purple">
+              <span aria-hidden="true">☕</span> Programación en Java
+            </li>
+            <li class="skill skill-orange">
+              <span aria-hidden="true">5</span> HTML y CSS
+            </li>
+            <li class="skill skill-green">
+              <span aria-hidden="true">▤</span> Bases de datos
+            </li>
+            <li class="skill skill-dark">
+              <span aria-hidden="true">⑂</span> Control de versiones con Git
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <h2>Competencias</h2>
-    <ul>
-      <li>Desarrollo web</li>
-      <li>Programación en Java</li>
-      <li>HTML y CSS</li>
-      <li>Bases de datos</li>
-      <li>Control de versiones con Git</li>
-    </ul>
+      <section class="content-section projects-section" id="proyectos">
+        <div class="section-icon" aria-hidden="true">▱</div>
+        <div class="section-body">
+          <h2>Proyectos</h2>
 
-    <h2>Proyectos</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-banner banner-portfolio" aria-hidden="true">
+                <span class="banner-icon">&lt;/&gt;</span>
+              </div>
+              <div class="project-content">
+                <h3>Portfolio personal</h3>
+                <p>
+                  Portfolio personal desarrollado para mostrar mi formación, mis
+                  proyectos y mi evolución como desarrollador.
+                </p>
+                <p class="technologies">
+                  <strong>Tecnologías:</strong> HTML, CSS, Git y GitHub Actions.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/AlvaroChp/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Repositorio <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    href="https://alvarochp.github.io/portfolio/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver web publicada <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <article>
-      <h3>Portfolio personal</h3>
-      <p>
-        Portfolio personal desarrollado para mostrar mi formación, mis proyectos
-        y mi evolución como desarrollador.
-      </p>
-      <p>Tecnologías empleadas: HTML, CSS, Git y GitHub Actions.</p>
-      <ul>
-        <li>
-          <a href="https://github.com/AlvaroChp/portfolio">Repositorio</a>
-        </li>
-        <li>
-          <a href="https://alvarochp.github.io/portfolio/">
-            Versión publicada
-          </a>
-        </li>
-      </ul>
-    </article>
+            <article class="project-card">
+              <div class="project-banner banner-crud" aria-hidden="true">
+                <span class="banner-icon">☕</span>
+              </div>
+              <div class="project-content">
+                <h3>Gestor de proyectos y tareas (CRUD)</h3>
+                <p>
+                  Aplicación backend para gestionar proyectos y tareas, con
+                  operaciones para crear, consultar, modificar y eliminar
+                  información.
+                </p>
+                <p class="technologies">
+                  <strong>Tecnologías:</strong> Java, Spring Boot y Maven.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/AlvaroChp/proyectoEntornoServidor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Repositorio del proyecto CRUD
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <article>
-      <h3>Gestor de proyectos y tareas (CRUD)</h3>
-      <p>
-        Aplicación backend para gestionar proyectos y tareas, con operaciones
-        para crear, consultar, modificar y eliminar información.
-      </p>
-      <p>Tecnologías empleadas: Java, Spring Boot y Maven.</p>
-      <p>
-        <a href="https://github.com/AlvaroChp/proyectoEntornoServidor">
-          Repositorio del proyecto CRUD
-        </a>
-      </p>
-    </article>
+            <article class="project-card">
+              <div class="project-banner banner-retro" aria-hidden="true">
+                <div class="retro-controller">
+                  <div class="controller-screen">
+                    <span class="controller-plus"></span>
+                    <span class="controller-display">
+                      <i></i>
+                      <i></i>
+                    </span>
+                    <span class="controller-buttons">
+                      <i></i>
+                      <i></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
 
-    <article>
-      <h3>Retro-Haven</h3>
-      <p>
-        Proyecto personal dedicado al mundo de los videojuegos y las consolas
-        retro, con información sobre diferentes marcas y plataformas.
-      </p>
-      <p>Tecnologías empleadas: HTML, CSS y JavaScript.</p>
-      <ul>
-        <li>
-          <a href="https://github.com/AlvaroChp/retro-haven">
-            Repositorio en GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://alvarochp.github.io/retro-haven/index.html">
-            Ver web publicada
-          </a>
-        </li>
-      </ul>
-    </article>
+              <div class="project-content">
+                <h3>Retro-Haven</h3>
+                <p>
+                  Proyecto personal dedicado al mundo de los videojuegos y las
+                  consolas retro, con información sobre diferentes marcas y
+                  plataformas.
+                </p>
+                <p class="technologies">
+                  <strong>Tecnologías:</strong> HTML, CSS y JavaScript.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/AlvaroChp/retro-haven"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Repositorio <span aria-hidden="true">↗</span>
+                  </a>
+                  <a
+                    href="https://alvarochp.github.io/retro-haven/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver web publicada <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <article>
-      <h3>RealBlack Tattoo</h3>
-      <p>
-        Propuesta de desarrollo web para un estudio de tatuajes, con un
-        portfolio de artistas, información sobre servicios, blog, contacto y
-        solicitud de citas.
-      </p>
-      <p>
-        El proyecto contempla una zona de administración para gestionar los
-        contenidos de la web.
-      </p>
-      <p>Estado: proyecto en desarrollo.</p>
-    </article>
+            <article class="project-card">
+              <div class="project-banner banner-tattoo" aria-hidden="true">
+                <div class="tattoo-flower">
+                  <span class="banner-icon" aria-hidden="true">✦</span>
+                </div>
+              </div>
 
-    <section>
-      <h2>Contacto</h2>
-      <ul>
-        <li>
-          <a href="mailto:alvarochp@gmail.com">Correo electrónico</a>
-        </li>
-        <li>
-          <a href="https://github.com/AlvaroChp">Mi perfil de GitHub</a>
-        </li>
-      </ul>
-    </section>
+              <div class="project-content">
+                <h3>RealBlack Tattoo</h3>
+                <p>
+                  Propuesta de desarrollo web para un estudio de tatuajes, con
+                  portfolio de artistas, servicios, blog, contacto y solicitud
+                  de citas.
+                </p>
+                <p>
+                  El proyecto contempla una zona de administración para
+                  gestionar los contenidos de la web.
+                </p>
+                <p class="project-status">
+                  Estado: <span>Proyecto en desarrollo</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <footer>
-      <p>© Álvaro Chillarón</p>
+      <section class="content-section contact-section" id="contacto">
+        <div class="section-icon" aria-hidden="true">✉</div>
+        <div class="section-body">
+          <h2>Contacto</h2>
+          <div class="contact-links">
+            <a href="mailto:alvarochp@gmail.com">
+              <span aria-hidden="true">✉</span> Correo electrónico
+            </a>
+            <a
+              href="https://github.com/AlvaroChp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span aria-hidden="true">⌘</span> Mi perfil de GitHub
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© Álvaro Chillarón Prats</p>
+      <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">
+        ↑
+      </a>
     </footer>
   </body>
 </html>
